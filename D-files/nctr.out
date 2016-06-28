@@ -1,0 +1,172 @@
+
+
+ ==================================================================== 
+   	  NCTR Model. (Version: 2.13; Date: 04/27/2015) 
+  	  Input Data File: .\nctr.(d)  
+  	  Gnuplot Plotting File:  .\nctr.plt
+ 							Tue Jun 28 10:43:17 2016
+ ==================================================================== 
+
+ BMDS NCTR model, ... 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 
+ The probability function is: 
+
+
+ Prob. = 1 - exp[-(alpha + th1*Rij) - (beta + th2*Rij)*Dose^rho],
+
+          where Rij is the centralized litter specific covariate.
+
+ Restrict Power rho >= 1. 
+
+
+
+ Total number of observations = 39
+ Total number of records with missing values = 0
+ Total number of parameters in model = 9
+ Total number of specified parameters = 0
+
+
+ Maximum number of iterations = 500
+ Relative Function Convergence has been set to: 1e-008
+ Parameter Convergence has been set to: 1e-008
+
+ Number of Bootstrap Iterations per run: 1000
+ Bootstrap Seed:  1467128597
+
+
+
+                  Default Initial Parameter Values  
+                          alpha =      0.16674
+                           beta =   0.00636744
+                         theta1 =   -0.0387075
+                         theta2 =   0.00193581
+                            rho =            1
+                           phi1 =            0
+                           phi2 =            0
+                           phi3 =            0
+                           phi4 =            0
+
+
+
+                                Parameter Estimates
+
+       Variable           Estimate             Std. Err. 
+          alpha            0.162132           0.0377255
+           beta          0.00651586          0.00103886
+         theta1          0.00639683            0.017593
+         theta2         -0.00038824         0.000532428
+            rho                   1             Bounded
+           phi1                   0             Bounded
+           phi2                   0             Bounded
+           phi3                   0             Bounded
+           phi4        6.44834e-008                  NA
+
+ Log-likelihood: -269.735   AIC: 549.469
+
+
+                               Litter Data
+
+
+           Lit.-Spec.              Litter                          Scaled
+   Dose       Cov.     Est._Prob.   Size    Expected   Observed   Residual
+--------------------------------------------------------------------------
+   0.0000    9.0000      0.135         9       1.214         0     -1.1847
+   0.0000    9.0000      0.135         9       1.214         1     -0.2089
+   0.0000   10.0000      0.140        10       1.404         1     -0.3679
+   0.0000   10.0000      0.140        10       1.404         2      0.5423
+   0.0000   11.0000      0.146        11       1.605         2      0.3375
+   0.0000   13.0000      0.157        13       2.038         3      0.7340
+   0.0000   14.0000      0.162        14       2.270         3      0.5295
+   0.0000   14.0000      0.162        14       2.270         2     -0.1957
+   0.0000   15.0000      0.167        15       2.512         2     -0.3541
+   0.0000   16.0000      0.173        16       2.765         1     -1.1668
+
+  25.0000    9.0000      0.284         9       2.555         2     -0.4104
+  25.0000    9.0000      0.284         9       2.555         5      1.8075
+  25.0000   10.0000      0.282        10       2.815         2     -0.5732
+  25.0000   10.0000      0.282        10       2.815         1     -1.2764
+  25.0000   11.0000      0.279        11       3.071         4      0.6247
+  25.0000   12.0000      0.277        12       3.321         3     -0.2072
+  25.0000   13.0000      0.274        13       3.567         6      1.5125
+  25.0000   14.0000      0.272        14       3.807         6      1.3170
+  25.0000   14.0000      0.272        14       3.807         4      0.1157
+  25.0000   14.0000      0.272        14       3.807         3     -0.4849
+
+  50.0000    7.0000      0.422         7       2.957         2     -0.7325
+  50.0000   10.0000      0.399        10       3.995         5      0.6490
+  50.0000   10.0000      0.399        10       3.995         5      0.6490
+  50.0000   11.0000      0.392        11       4.308         4     -0.1901
+  50.0000   11.0000      0.392        11       4.308         4     -0.1901
+  50.0000   11.0000      0.392        11       4.308         5      0.4276
+  50.0000   11.0000      0.392        11       4.308         4     -0.1901
+  50.0000   14.0000      0.367        14       5.143         4     -0.6339
+  50.0000   14.0000      0.367        14       5.143         5     -0.0795
+  50.0000   15.0000      0.359        15       5.386         6      0.3302
+
+ 100.0000    8.0000      0.607         8       4.854         5      0.1054
+ 100.0000   10.0000      0.580        10       5.805         4     -1.1564
+ 100.0000   11.0000      0.567        11       6.233         6     -0.1417
+ 100.0000   11.0000      0.567        11       6.233         6     -0.1417
+ 100.0000   12.0000      0.552        12       6.628         8      0.7964
+ 100.0000   12.0000      0.552        12       6.628         8      0.7964
+ 100.0000   13.0000      0.538        13       6.989         7      0.0063
+ 100.0000   14.0000      0.522        14       7.313         6     -0.7025
+ 100.0000   14.0000      0.522        14       7.313         6     -0.7025
+
+
+
+Scaled Residual(s) for Dose Group Nearest the BMD
+------------------------------
+Minimum scaled residual for dose group nearest the BMD =        -0.2072
+Minimum ABS(scaled residual) for dose group nearest the BMD =    0.2072
+Average scaled residual for dose group nearest the BMD =        -0.2072
+Average ABS(scaled residual) for dose group nearest the BMD =    0.2072
+Maximum scaled residual for dose group nearest the BMD =        -0.2072
+Maximum ABS(scaled residual) for dose group nearest the BMD =    0.2072
+Number of litters used for scaled residual for dose group nearest the BMD = 1
+
+
+
+ Observed Chi-square =    20.2631
+
+ 		  Bootstrapping Results  
+
+Number of Bootstrap Iterations per run: 1000
+
+		    Bootstrap Chi-square Percentiles
+ Bootstrap
+    Run        P-value    50th     90th     95th     99th
+----------------------------------------------------------- 
+     1          0.9930  38.0087  49.4317  53.7689  60.2609  
+     2          0.9940  38.2319  49.7679  53.3394  60.2490  
+     3          0.9920  38.1363  50.1912  53.7693  60.1544  
+----------------------------------------------------------- 
+ Combined       0.9930  38.1047  49.8748  53.7092  60.2609  
+
+
+
+The results for three separate runs are shown.  If the estimated p-values are sufficiently
+stable (do not vary considerably from run to run), then then number of iterations is
+considered adequate.  The p-value that should be reported is the one that combines
+the results of the three runs.  If sufficient stability is not evident (and especially
+if the p-values are close to the critical level for determining adequate fit, e.g., 0.05),
+then the user should consider increasing the number of iterations per run.
+
+
+To calculate the BMD and BMDL, the litter
+specific covariate is fixed at the overall mean
+of the litter specific covariates: 11.692308
+
+   Benchmark Dose Computation
+
+Specified effect =            0.1
+
+Risk Type        =      Extra risk 
+
+Confidence level =           0.95
+
+             BMD =        16.1699
+
+            BMDL =        8.08493
+
