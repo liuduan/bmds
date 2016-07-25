@@ -3,7 +3,11 @@ import inspect
 import sys
 
 import pytest
-# import bmds
+scriptpath = "../bmds/"
+
+# Add the directory containing your module to the Python path (wants absolute paths)
+sys.path.append(os.path.abspath(scriptpath))
+import bmds
 
 
 """
